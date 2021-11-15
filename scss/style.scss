@@ -1,0 +1,93 @@
+//@import "_null";
+@font-face {
+    font-family: 'Praise';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Praise/Praise-Regular.ttf');
+}
+@font-face {
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/crimson-text/CrimsonText-Regular.ttf');
+}
+@font-face {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/crimson-text/CrimsonText-Regular.ttf');
+}
+@font-face {
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/crimson-text/CrimsonText-Semi-Bold.ttf');
+}
+@font-face {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/crimson-text/CrimsonText-Regular.ttf');
+}
+
+body {
+    background-color:azure;
+}
+
+.active-button {
+    background: red;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.hide {
+    display: none;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Crimson Text', Times, serif;
+    .title {
+        font-family: 'Praise', Times, serif;
+        font-size: 48px;
+    }
+    .list-area {
+        .list-area_input {
+            display: block;
+            margin: 20px 0 20px 0;
+            padding-left: 10px;
+            width: 150px;
+            height: 36px;
+            font-size: 16px;
+        }
+        font-size: 24px;
+        .list-area_unordered {
+            list-style-type: square;
+            li {
+                width: 400px;
+                padding-top: 5px;
+                .todo-text {
+                    width: 300px;
+                }
+                .todo-trash {
+                    float: right;
+                }
+                .checked {
+                    text-decoration: line-through;
+                }
+            }
+            .trash {
+                width: 35px;
+                height: 35px;
+            }
+        }
+        button {
+            display: inline-block;
+            width: 80px;
+            height: 30px;
+        }
+    }
+}
